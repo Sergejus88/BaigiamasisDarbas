@@ -5,13 +5,12 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace FrameWork.Pages._1a
-{
-    
+{ 
    public class RegistrationPage
    {
       public static void Open()
       {
-          Driver.Open("https://www.1a.lt/users/sign_up");
+          Common.Open("https://www.1a.lt/users/sign_up");
       }
 
       public static void inputFirstName(string inputFirstName)

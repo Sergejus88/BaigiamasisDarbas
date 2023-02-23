@@ -32,10 +32,5 @@ namespace FrameWork
         {
             driver.Quit();
         }
-
-        internal static string Open(string v)
-        {
-            return Driver.Open(v);
-        }
     }
 }

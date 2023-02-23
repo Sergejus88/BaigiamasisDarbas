@@ -40,6 +40,11 @@ namespace FrameWork.Pages
         {
             return SendKeys(valueInputNumbers);
         }
+
+        internal static string Open(string locator)
+        {
+            return GetElement(locator).Text;
+        }
     }
 }
     

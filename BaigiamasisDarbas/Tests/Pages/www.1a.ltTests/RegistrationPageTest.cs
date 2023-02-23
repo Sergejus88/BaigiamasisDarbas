@@ -6,15 +6,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Tests.Pages.BaseTests;
 
 namespace Tests
 {
-    internal class RegistrationPageTest
+    internal class RegistrationPageTest : BaseTest
     {
         [SetUp]
-        public void SetUp()
+        public void Open()
         {
-            Driver.SetupDriver();
             RegistrationPage.Open();
         }
 
@@ -38,12 +38,6 @@ namespace Tests
             RegistrationPage.ClickSubmitButton();
 
             Assert.AreEqual(expectedResult, actualResult);
-        }
-
-        [TearDown]
-        public void TearDown()
-        {
-            Driver.CloseDriver();
         }
     }
 }

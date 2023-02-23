@@ -11,7 +11,7 @@ namespace FrameWork
     {
         public static void Open()
         {
-            Driver.Open("https://www.1a.lt/physical_smart_card/new");
+            Common.Open("https://www.1a.lt/physical_smart_card/new");
         }
         public static void EnterNumbers(string valueInputNumbers)
         {

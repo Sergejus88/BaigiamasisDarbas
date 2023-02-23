@@ -11,7 +11,7 @@ namespace FrameWork
     {
         public static void Open()
         {
-            Driver.Open("https://www.1a.lt/users/sign_in");
+            Common.Open("https://www.1a.lt/users/sign_in");
         }
 
         public static string InputEmail(string expectedResult)
