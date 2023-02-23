@@ -40,7 +40,7 @@ namespace FrameWork.Pages._1a
 
       public static void ClickSubmitButton()
       {
-          Common.ClickElement(Locators.RegistrationPage.inputFirstName);
+            Common.ClickElement(Locators.RegistrationPage.inputFirstName);
       }
    }
 }
