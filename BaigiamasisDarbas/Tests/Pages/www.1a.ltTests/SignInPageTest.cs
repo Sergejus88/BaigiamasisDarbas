@@ -5,15 +5,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Tests.Pages.BaseTests;
 
 namespace Tests
 {
-    internal class SignInPageTest
+    internal class SignInPageTest : BaseTest
     {
         [SetUp]
-        public void SetUp()
+        public void Open()
         {
-            Driver.SetupDriver();
             SignInPage.Open();
         }
 
@@ -32,12 +32,6 @@ namespace Tests
 
             Assert.IsTrue(actualEmail.Contains(valueInputEmail));
             Assert.IsTrue(actualPassword.Contains(valueInputPassword));
-        }
-
-        [TearDown]
-        public void TearDown()
-        {
-            Driver.CloseDriver();
         }
     }
 }

@@ -6,15 +6,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Tests.Pages.BaseTests;
 
-namespace Tests
+namespace Tests 
 {
-    internal class AddingCardTest
+    internal class AddingCardTest : BaseTest
     {   
         [SetUp]
-        public void SetUp()
+        public void Open()
         {
-            Driver.SetupDriver();
             AddingCard.Open();
         }
 
@@ -27,13 +27,7 @@ namespace Tests
             AddingCard.ClickSubmitButton();
 
             Assert.IsTrue(AddingCard.CheckIfErrorIsDisplayed());
-        }
-
-        [TearDown]
-        public void TearDown()
-        {
-            Driver.CloseDriver();
-        }   
+        } 
     }
 }
 
