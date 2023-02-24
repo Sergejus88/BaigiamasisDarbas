@@ -17,6 +17,9 @@ namespace FrameWork
 
         public static string InputEmail(string expectedResult)
         {
+            // Vienoje POM klasėje lokatorius naudojati iš Locators klasės
+            // Čia lokatorius laikote tiesiai metoduose
+            // Reikėtų pastovumo, pasirinkite vieną iš būdų ir naudokite jį visur
             string locator = "//*[@id='user_email']";
             return Common.GetElementText(locator);
         }
