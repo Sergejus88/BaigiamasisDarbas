@@ -11,6 +11,7 @@ namespace FrameWork
     {
         public static void Open()
         {
+            // Čia ta pati problema
             Common.Open("https://www.1a.lt/users/sign_in");
         }
 

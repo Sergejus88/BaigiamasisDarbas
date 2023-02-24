@@ -10,6 +10,7 @@ namespace FrameWork.Pages._1a
    {
       public static void Open()
       {
+          // Čia ta pati problema
           Common.Open("https://www.1a.lt/users/sign_up");
       }
 
