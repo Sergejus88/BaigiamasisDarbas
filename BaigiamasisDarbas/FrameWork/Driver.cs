@@ -22,8 +22,13 @@ namespace FrameWork
             return driver;
         }
 
+        // Kas yra string temp?
         public static void OpenUrl(string url, string temp)
         {
+            // Čia nereikia abiejų kvietimų
+            // Pirmasis mums atidaro langą "švariai"
+            // Antrasis išlaiko mūsų ankstesnius veiksmus svetainėje taigi naudojamas specifinėse situacijose
+            // Bendriniu atveju svetainės atidarymui naudojame driver.Url = ""
             driver.Url = url;
             driver.Navigate().GoToUrl(url);
         }
