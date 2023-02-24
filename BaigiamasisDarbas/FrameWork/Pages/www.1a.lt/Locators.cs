@@ -8,6 +8,8 @@ namespace FrameWork
 {
     internal class Locators
     {
+        // Du skirtingi kintamieji lokatoriams, bet jų reikšmės vienodos
+        // Ar čia nėra kokios klaidos?
         internal static string inputNumbers = "//*[@id='physical_smart_card_card_number_suffix']";
         internal static string buttonSubmit = "//*[@id='physical_smart_card_card_number_suffix']";
         
