@@ -11,6 +11,8 @@ namespace FrameWork
     {
         public static void Open()
         {
+            // Čia kreipiatės į metodą Common.Open(), bet pažiūrėkite į jo vidų
+            // Ar tikrai jis atidaro puslapį?
             Common.Open("https://www.1a.lt/physical_smart_card/new");
         }
         public static void EnterNumbers(string valueInputNumbers)
