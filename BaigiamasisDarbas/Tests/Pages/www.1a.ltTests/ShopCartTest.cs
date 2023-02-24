@@ -30,6 +30,9 @@ namespace Tests
         [Test]
         public void TestProductIsAddedToCart()
         {
+            // IWebElement testuose negali būti
+            // Taip pat ir visas driver objektas neturėtų būti testuose
+            // Tam yra POM ir Common dalys kurios "paslėpia" visą techninį kodą nuo galutinio vartotojo
             IWebElement product = driver.FindElement(By.XPath("//*[@id='cart_item_1582294']"));
             product.Click();
             IWebElement addToCartButton = driver.FindElement(By.XPath("//*[@id='add_to_cart_form']"));
