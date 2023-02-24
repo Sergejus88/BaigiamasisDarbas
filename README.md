@@ -55,5 +55,6 @@ Nuoroda į testuojamą interneto svetainę - https://www.1a.lt/.
           6. žingsnis – uždarome šį langą ir turėtume pamatyti viršutinėje svetainės dešinėje dalyje atvaizduotą mini krepšelį su priklijuotu skaičiumi „1“.
           7. žingsnis – Atidarome jį, kad įsitikinti jog mūsų norimas pirkti produktas yra pridėtas pirkinių krepšelyje.
           
+          
       – Galutinis Rezultatas:
             – Paspaudus ant mini krepšelio, naujai atsidariusiame lange matome, jog mūsų produktas yra pridėtas į pirkinių krepšelį ir galima toliau tęsti produkto pirkimo veiksmus.
