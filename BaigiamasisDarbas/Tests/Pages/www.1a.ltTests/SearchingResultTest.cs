@@ -17,12 +17,15 @@ namespace Tests
         [SetUp]
         public void SetUp()
         {
+            // Čia atidarote naršyklę
             Driver.SetupDriver();
         }
 
         [Test]
         public void SearchForProduct()
         {
+            // Čia dar kartą sukuriate driver objektą kuris vėl atidarys antrą naršyklės langą
+            // Na ir taip pat komentaras kaip ir ankstesniame komentare: čia nenaudojate POM
             IWebDriver driver = new ChromeDriver();
             driver.Navigate().GoToUrl("https://www.1a.lt/");
 
