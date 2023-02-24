@@ -36,6 +36,8 @@ namespace FrameWork.Pages
             return GetElement(locator).GetAttribute(attributeName);
         }
 
+        // Nelabai suprantu kas čia per metodas
+        // Teisingą SendKeys implementaciją turite 29 eilutėje ir neaišku kam šis metodas yra reikalingas
         internal static string SendKeys(string valueInputNumbers)
         {
             return SendKeys(valueInputNumbers);
