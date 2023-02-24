@@ -17,6 +17,12 @@ namespace Tests
         [SetUp]
         public void SetUp()
         {
+            // Testuose negali būti šio kodo.
+            // Jis susijęs su Selenium ir mes siekiame atskyrimo.
+            // Šiam veiksmui turime Driver klasę ir metodą joje.
+            // Viršuje turite du importus kurie testuose neturėtų būti naudojami:
+            //   using OpenQA.Selenium;
+            //   using OpenQA.Selenium.Chrome;
             driver = new ChromeDriver();
             driver.Navigate().GoToUrl("https://www.1a.lt/");
         }
