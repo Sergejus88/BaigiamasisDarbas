@@ -7,8 +7,6 @@ namespace FrameWork.Pages.www._1a.lt
 {
     public  class SearchingResult
     {
-        public static bool? waitForElementToBeVisible;
-
         public static void Open()
         {
             Driver.OpenUrl("https://www.1a.lt/");
