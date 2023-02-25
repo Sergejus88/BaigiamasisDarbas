@@ -65,7 +65,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Pages\BaseTests\BaseTest.cs" />
-    <Compile Include="Pages\www.1a.ltTests\AddingCardTest.cs" />
+    <Compile Include="Pages\www.1a.ltTests\WishLisTest.cs" />
     <Compile Include="Pages\www.1a.ltTests\RegistrationPageTest.cs" />
     <Compile Include="Pages\www.1a.ltTests\ShopCartTest.cs" />
     <Compile Include="Pages\www.1a.ltTests\SignInPageTest.cs" />
