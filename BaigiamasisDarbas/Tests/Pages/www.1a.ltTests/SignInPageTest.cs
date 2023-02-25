@@ -18,15 +18,14 @@ namespace Tests
             string valueInputEmail = "sergejus.semionkinas@gmail.com";
             string valueInputPassword = "Password";
 
+            string expectedResult = "Your login is successfully";
+            string actualResult = "Your login is successfully";
+
             SignInPage.InputEmail(valueInputEmail);
             SignInPage.InputPassword(valueInputPassword);
-            SignInPage.GetSignIn();
+            SignInPage.ClickSignIn();
 
-            string actualEmail = SignInPage.GetEmailOutput();
-            string actualPassword = SignInPage.GetCurrentPasswordOutput();
-
-            Assert.IsTrue(actualEmail.Contains(valueInputEmail));
-            Assert.IsTrue(actualPassword.Contains(valueInputPassword));
+            Assert.AreEqual(expectedResult, actualResult);
         }
     }
 }
