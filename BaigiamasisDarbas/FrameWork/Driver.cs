@@ -40,15 +40,5 @@ namespace FrameWork
             Directory.CreateDirectory(screenshotsDirectoryPath);
             screenshot.SaveAsFile(screenshotFilePath, ScreenshotImageFormat.Png);
         }
-
-        internal static void Open(string v)
-        {
-            throw new NotImplementedException();
-        }
-
-        internal static void OpenUrl(string v)
-        {
-            throw new NotImplementedException();
-        }
     }
 }
