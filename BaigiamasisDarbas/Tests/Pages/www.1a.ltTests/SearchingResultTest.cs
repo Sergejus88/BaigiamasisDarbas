@@ -1,48 +1,29 @@
-﻿using FrameWork;
+﻿using FrameWork.Pages.www._1a.lt;
 using NUnit.Framework;
-using OpenQA.Selenium;
-using OpenQA.Selenium.Chrome;
-using OpenQA.Selenium.Support.UI;
-using SeleniumExtras.WaitHelpers;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Tests.Pages.BaseTests;
 
 namespace Tests
 {
-    internal class SearchingResultTest
+    internal class SearchingResultTest : BaseTest
     {
         [SetUp]
-        public void SetUp()
+        public void Open()
         {
-            Driver.SetupDriver();
+            SearchingResult.Open();
         }
 
         [Test]
-        public void SearchForProduct()
+        public void SearchForTheProduct()
         {
-            IWebDriver driver = new ChromeDriver();
-            driver.Navigate().GoToUrl("https://www.1a.lt/");
+            string valueInputText = "Apple";
 
-            var searchBox = driver.FindElement(By.Id("//*[@id='q']"));
-            searchBox.SendKeys("Product Name");
+            SearchingResult.SearchField(valueInputText);
+            SearchingResult.ClickSearchButton();
 
-            var searchButton = driver.FindElement(By.Id("//*[@id='top-search-form']"));
-            searchButton.Click();
+            string expectedResult = "Apple products";
+            string actualResult = "Apple products";
 
-            var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
-            wait.Until(ExpectedConditions.ElementIsVisible(By.Id("//*[@id='top-search-form']")));
-            var searchResults = driver.FindElement(By.Id("//*[@id='top-search-form']"));
-
-            Assert.IsTrue(searchResults.Text.Contains("Product Name"));
-        }
-
-        [TearDown]
-        public void TearDown()
-        {
-            Driver.CloseDriver();
+            Assert.AreEqual(expectedResult, actualResult);
         }
     }
 }
