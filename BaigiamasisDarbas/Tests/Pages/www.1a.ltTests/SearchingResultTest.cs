@@ -23,7 +23,8 @@ namespace Tests
             string expectedResult = "Apple products";
             string actualResult = "Apple products";
 
-            Assert.AreEqual(expectedResult, actualResult);
+            string WaitForElementToBeVisible = "results";
+            Assert.AreEqual(expectedResult, actualResult, WaitForElementToBeVisible);
         }
     }
 }
