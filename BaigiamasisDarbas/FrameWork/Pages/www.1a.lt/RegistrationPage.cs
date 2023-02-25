@@ -1,16 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace FrameWork.Pages._1a
+﻿namespace FrameWork.Pages._1a
 { 
    public class RegistrationPage
    {
       public static void Open()
       {
-          Common.Open("https://www.1a.lt/users/sign_up");
+          Driver.OpenUrl("https://www.1a.lt/users/sign_up");
       }
 
       public static void inputFirstName(string inputFirstName)
@@ -35,12 +29,12 @@ namespace FrameWork.Pages._1a
 
       public static void inputReapetPassword(string valueInputRepeatPassword)
       {
-          Common.SendKeys(Locators.RegistrationPage.inputFirstName, valueInputRepeatPassword);
+          Common.SendKeys(Locators.RegistrationPage.inputReapetPassword, valueInputRepeatPassword);
       }
 
       public static void ClickSubmitButton()
       {
-            Common.ClickElement(Locators.RegistrationPage.inputFirstName);
+            Common.ClickElement(Locators.RegistrationPage.buttonSubmit);
       }
    }
 }
