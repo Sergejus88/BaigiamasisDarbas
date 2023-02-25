@@ -40,5 +40,10 @@ namespace FrameWork
             Directory.CreateDirectory(screenshotsDirectoryPath);
             screenshot.SaveAsFile(screenshotFilePath, ScreenshotImageFormat.Png);
         }
+
+        internal static void OpenUrl(string v)
+        {
+            Driver.OpenUrl(v);
+        }
     }
 }
