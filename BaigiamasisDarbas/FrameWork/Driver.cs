@@ -1,10 +1,7 @@
 ﻿using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.IO;
 
 namespace FrameWork
 {
@@ -31,6 +28,17 @@ namespace FrameWork
         public static void CloseDriver()
         {
             driver.Quit();
+        }
+
+        public static void TakeScreenshot()
+        {
+            string screenshotsDirectoryPath = $"{AppDomain.CurrentDomain.BaseDirectory}/screenshots";
+            string screenshotName = $"screenshot-{Guid.NewGuid()}.png";
+            string screenshotFilePath = $"{screenshotsDirectoryPath}\\{screenshotName}";
+
+            Screenshot screenshot = ((ITakesScreenshot)driver).GetScreenshot();
+            Directory.CreateDirectory(screenshotsDirectoryPath);
+            screenshot.SaveAsFile(screenshotFilePath, ScreenshotImageFormat.Png);
         }
     }
 }

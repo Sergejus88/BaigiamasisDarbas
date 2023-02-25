@@ -1,10 +1,6 @@
 ﻿using FrameWork;
 using NUnit.Framework;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using NUnit.Framework.Interfaces;
 
 namespace Tests.Pages.BaseTests
 {
@@ -19,6 +15,10 @@ namespace Tests.Pages.BaseTests
         [TearDown]
         public void TearDown()
         {
+            if (TestContext.CurrentContext.Result.Outcome != ResultState.Success)
+            {
+                Driver.TakeScreenshot();
+            }
             Driver.CloseDriver();
         }
     }
