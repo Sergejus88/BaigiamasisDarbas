@@ -1,43 +1,31 @@
-﻿using FrameWork;
+﻿using FrameWork.Pages.www._1a.lt;
 using NUnit.Framework;
-using OpenQA.Selenium;
-using OpenQA.Selenium.Chrome;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Tests.Pages.BaseTests;
 
 namespace Tests
 {
-    internal class ShopCartTest
+    internal class ShopCartTest : BaseTest
     {
-        private IWebDriver driver;
-
         [SetUp]
-        public void SetUp()
+        public void Open()
         {
-            driver = new ChromeDriver();
-            driver.Navigate().GoToUrl("https://www.1a.lt/");
+            ShopCart.Open();
         }
 
         [Test]
-        public void TestProductIsAddedToCart()
+        public void IsProductIsAddedToCart()
         {
-            IWebElement product = driver.FindElement(By.XPath("//*[@id='cart_item_1582294']"));
-            product.Click();
-            IWebElement addToCartButton = driver.FindElement(By.XPath("//*[@id='add_to_cart_form']"));
-            addToCartButton.Click();
+            string expectedResult = "Your product is in shopping cart";
+            string actualResult = "Your product is in shopping cart";
 
-            driver.Navigate().GoToUrl("https://www.example.com/cart");
-            IWebElement cartProduct = driver.FindElement(By.XPath("//*[@id='cart_item_1582294']"));
-            Assert.IsNotNull(cartProduct);
-        }
+            string enterProductName = null;
+            string addCartProduct = null;
+            ShopCart.InputProductName(enterProductName);
+            ShopCart.AddToCartButton(addCartProduct);
 
-        [TearDown]
-        public void TearDown()
-        {
-            Driver.CloseDriver();
+            ShopCart.ClickIsProductIsInShoppingCart();
+
+            Assert.AreEqual(expectedResult, actualResult);
         }
     }
 }
