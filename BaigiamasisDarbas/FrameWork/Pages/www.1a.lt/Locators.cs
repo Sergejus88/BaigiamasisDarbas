@@ -2,32 +2,40 @@
 {
     internal class Locators
     {
-        internal class AddingCard
+        internal class WishList
         {
-            internal static string inputNumbers = "//*[@id='physical_smart_card_card_number_suffix']";
-            internal static string buttonSubmit = "//*[@id='physical_smart_card_card_number_suffix']";
-        }
-        internal class RegistrationPage
-        {
-            internal static string inputFirstName = "//*[@id='user_first_name']";
-            internal static string inputLastName = "//*[@id='user_last_name']";
-            internal static string inputEmail = "//*[@id='user_email']";
-            internal static string inputPassword = "//*[@id='user_password']";
-            internal static string inputReapetPassword = "//*[@id='user_password_confirmation']";
-            internal static string buttonSubmit = "//*[@id='new_user']/div[9]/input";
-        }
+            internal static string clickButton = "<i class=favorite-items__icon icon-svg></i>";
+            internal static string wishItemListPlace = "<p class='wishlists-list__item-name'>Išsaugotos prekės</p>";
 
-        internal class SignInPage
-        {
-            internal static string inputEmail = "//*[@id='user_email']";
-            internal static string inputPassword = "//*[@id='user_password']";
-            internal static string clickSignIn = "//*[@id='new_user']";
+            internal class RegistrationPage
+            {
+                internal static string inputFirstName = "//*[@id='user_first_name']";
+                internal static string inputLastName = "//*[@id='user_last_name']";
+                internal static string inputEmail = "//*[@id='user_email']";
+                internal static string inputPassword = "//*[@id='user_password']";
+                internal static string inputReapetPassword = "//*[@id='user_password_confirmation']";
+                internal static string buttonSubmit = "//*[@id='new_user']/div[9]/input";
+            }
+
+            internal class SignInPage
+            {
+                internal static string inputEmail = "//*[@id='user_email']";
+                internal static string inputPassword = "//*[@id='user_password']";
+                internal static string clickSignIn = "//*[@id='new_user']";
+            }
+
+            internal class ShopCart
+            {
+                internal static string EnterProduct = "//*[@id='cart_item_1582294']";
+                internal static string AddProduct = "//*[@id='add_to_cart_form']";
+                internal static string clickShoppingCart = "//*[@id='cart_item_1582294']";
+            }
+
+            internal class SearchingResult
+            {
+                internal static string inputText = "//*[@id='q']";
+                internal static string clickButton = "//*[@id='top-search-form']";
+            }
         }
-    
-    
-    
-        
-        
-       
-    }
+    }      
 }
