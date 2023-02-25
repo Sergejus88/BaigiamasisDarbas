@@ -32,17 +32,15 @@ Nuoroda į testuojamą interneto svetainę - https://www.1a.lt/.
             – Atlikus aukčiau nurodytus veiksmus gauname atsiranda ieškomo produkto modeliai su aprašymais, nuotraukomis ir kainomis.                            
  
 
- 4. scenarijus – Suvesti neteisingą informaciją ir išsiaiškinti ar tokiu būdu įmanoma pridėti “SmartNet” kortelę prie savo asmeninės paskyros.
-     1. atvejis – Neteisingos informacijos suvedimas:
-          1. žingsnis - pagrindiniame svetainės puslapyje susirasti laukelį – prisijungti/registruotis.
-          2. žingsnis – prisijungti prie asmeninės paskyros.
-          3. žingsnis – prisijungus, kairėje ekrano pusėje susirasti laukelį su pavadinimu “SmartNet kortelė”.
-          4. žingsnis – paspaudus ant jo naujai atsidariusiame lange spaudžiame pridėti SmartNet kortelę.
-          5. žingsnis – atsidariusiame lange matome mažą laukelį kur reikia suvesti norimos pridėti kortelės duomenis(numerius)
-          6. žingsnis – suvedame, bet kokią skaičių kombinaciją ir spaudžiame laukelį – “Aktyvuoti”.
-          
+ 4. scenarijus – Surisrasti keletą patikusių produktų ir įtraukti juos į patikusių produktų sąrašą, - "Wishlist" ir patikrinti ar visi pažymėti produktai atsirado      "Wishlist".
+     1. atvejis – Patikusių produktų įtraukimas į Wishlist":
+          1. žingsnis - prisijungiame prie asmeninės paskyros.
+          2. žingsnis – dešinėje puslapio pusėje surandame priekių sąrašus ir spaudžiame ant kompiuterinės technikos/nešiojamų kompiuterių.
+          3. žingsnis – išsirenkame kelias prekes ir spaudžiame ant jų "širdutę"
+          4. žingsnis – Kairėje puslapio pusėje randasi ikona su širdies atvaizdu, spaudžiame ant jos.
+     
       – Galutinis Rezultatas:
-            – Paspaudus laukelį “Aktyvuoti” gauname pranešimą – “Nurodytas SMartNet kortelės numeris nerastas. Patikrink, ar teisingai įvedei kortelės numerį”.   
+            – Paspaudus įkoną, atsidaro naujas puslapis , kuriame yra pavaizduotos mūsų išrinktos prekės.
            
               
  5. scenarijus – Įsidėti į prekių krepšelį norimą pirkti produktą ir patikrinti tas produktas atsirado pirkinių krepšelyje.
