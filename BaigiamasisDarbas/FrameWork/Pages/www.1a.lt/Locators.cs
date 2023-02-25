@@ -4,8 +4,8 @@
     {
         internal class WishList
         {
-            internal static string clickButton = "<i class=favorite-items__icon icon-svg></i>";
-            internal static string wishItemListPlace = "<p class='wishlists-list__item-name'>Išsaugotos prekės</p>";
+            internal static string clickbutton = "<i class=favorite-items__icon icon-svg></i>";
+            internal static string clickOnWishlist = "<p class='wishlists-list__item-name'>Išsaugotos prekės</p>"; 
 
             internal class RegistrationPage
             {
