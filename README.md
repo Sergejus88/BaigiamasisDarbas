@@ -32,7 +32,7 @@ Nuoroda į testuojamą interneto svetainę - https://www.1a.lt/.
             – Atlikus aukčiau nurodytus veiksmus gauname atsiranda ieškomo produkto modeliai su aprašymais, nuotraukomis ir kainomis.                            
  
 
- 4. scenarijus – Surisrasti keletą patikusių produktų ir įtraukti juos į patikusių produktų sąrašą, - "Wishlist" ir patikrinti ar visi pažymėti produktai atsirado      "Wishlist".
+ 4. scenarijus – Susirasti keletą patikusių prekių ir įtraukti juos į patikusių produktų sąrašą, - "Wishlist" ir patikrinti ar visi pažymėti produktai atsirado      "Wishlist".
      1. atvejis – Patikusių produktų įtraukimas į Wishlist":
           1. žingsnis - prisijungiame prie asmeninės paskyros.
           2. žingsnis – dešinėje puslapio pusėje surandame priekių sąrašus ir spaudžiame ant kompiuterinės technikos/nešiojamų kompiuterių.
