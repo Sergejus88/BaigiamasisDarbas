@@ -16,6 +16,13 @@ namespace Tests
 
         public void AddSomeProductToWishlist()
         {
+            string valueInputEmail = "sergejus.semionkinas@gmail.com";
+            string valueInputPassword = "Password";
+
+            SignInPage.InputEmail(valueInputEmail);
+            SignInPage.InputPassword(valueInputPassword);
+            SignInPage.ClickSignIn();
+
             string expectedResult = ("Added items in wishlist");
             string actualResult = ("Added items in wishlist");
 

@@ -18,8 +18,8 @@ namespace Tests
             string expectedResult = "Your product is in shopping cart";
             string actualResult = "Your product is in shopping cart";
 
-            string enterProductName = null;
-            string addCartProduct = null;
+            string enterProductName = "Lenovo";
+            string addCartProduct = "Lenovo";
             ShopCart.InputProductName(enterProductName);
             ShopCart.AddToCartButton(addCartProduct);
 
