@@ -15,7 +15,6 @@ namespace Tests.Pages.BaseTests
         [TearDown]
         public void TearDown()
         {
-
             if (TestContext.CurrentContext.Result.Outcome != ResultState.Success)
             {
                 Driver.TakeScreenshot();

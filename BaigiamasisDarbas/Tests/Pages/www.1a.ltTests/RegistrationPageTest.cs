@@ -1,15 +1,17 @@
-﻿using FrameWork.Pages._1a;
+﻿using FrameWork;
+using FrameWork.Pages.www._1a.lt;
 using NUnit.Framework;
-using Tests.Pages.BaseTests;
 
 namespace Tests
 {
-    internal class RegistrationPageTest : BaseTest
+    internal class RegistrationPageTest 
     {
+
         [SetUp]
-        public void Open()
+        public void SetUp()
         {
-            RegistrationPage.Open();
+            Driver.SetupDriver();
+            Driver.Open();
         }
 
         [Test]
@@ -24,14 +26,20 @@ namespace Tests
             string inputPassword = "Password";
             string inputReapetPassword = "Password";
 
-            RegistrationPage.inputFirstName(inputFirstName);
-            RegistrationPage.inputLastName(inputLastname);
-            RegistrationPage.inputEmailSignUP(inputEmail);
-            RegistrationPage.inputPassword(inputPassword);
-            RegistrationPage.inputReapetPassword(inputReapetPassword);
+            RegistrationPage.EnterFirstName(inputFirstName);
+            RegistrationPage.EnterLastName(inputLastname);
+            RegistrationPage.EnterEmail(inputEmail);
+            RegistrationPage.EnterPassword(inputPassword);
+            RegistrationPage.EnterReapetPassword(inputReapetPassword);
             RegistrationPage.ClickSubmitButton();
 
             Assert.AreEqual(expectedResult, actualResult);
+        }
+
+        [TearDown]
+        public void TearDown()
+        {
+            Driver.CloseDriver();
         }
     }
 }

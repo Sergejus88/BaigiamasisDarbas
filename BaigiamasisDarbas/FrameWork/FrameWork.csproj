@@ -54,12 +54,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Driver.cs" />
+    <Compile Include="Pages\www.1a.lt\RegistrationPage.cs" />
     <Compile Include="Pages\www.1a.lt\WishList.cs" />
     <Compile Include="Pages\www.1a.lt\Locators.cs" />
     <Compile Include="Pages\www.1a.lt\SearchingResult.cs" />
     <Compile Include="Pages\www.1a.lt\ShopCart.cs" />
     <Compile Include="Pages\www.1a.lt\SignInPage.cs" />
-    <Compile Include="Pages\www.1a.lt\RegistrationPage.cs" />
     <Compile Include="Pages\Common.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
