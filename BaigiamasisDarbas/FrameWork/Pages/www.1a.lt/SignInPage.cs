@@ -11,12 +11,12 @@ namespace FrameWork
 
         public static void InputEmail(string valueInputEmail)
         {
-            Common.ClickElement(Locators.SignInPage.inputEmail, valueInputEmail);
+            Common.SendKeys(Locators.SignInPage.inputEmail, valueInputEmail);
         }
 
         public static void InputPassword(string valueinputPassword)
         {
-            Common.ClickElement(Locators.SignInPage.inputPassword, valueinputPassword);
+            Common.SendKeys(Locators.SignInPage.inputPassword, valueinputPassword);
         }
 
         public static void ClickSignIn()
