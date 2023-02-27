@@ -1,21 +1,20 @@
-﻿using FrameWork;
-using FrameWork.Pages.www._1a.lt;
+﻿using FrameWork.Pages.www._1a.lt;
 using NUnit.Framework;
+using Tests.Pages.BaseTests;
 
 namespace Tests
 {
-    internal class RegistrationPageTest 
+    internal class RegistrationPageTest : BaseTest
     {
 
         [SetUp]
-        public void SetUp()
+        public void Open()
         {
-            Driver.SetupDriver();
-            Driver.Open();
+            RegistrationPage.Open();
         }
 
         [Test]
-        public void FillFormSignUp()
+        public void FillSignUp()
         {
             string expectedResult = ("Registration is completed");
             string actualResult = ("Registration is completed");
@@ -34,12 +33,6 @@ namespace Tests
             RegistrationPage.ClickSubmitButton();
 
             Assert.AreEqual(expectedResult, actualResult);
-        }
-
-        [TearDown]
-        public void TearDown()
-        {
-            Driver.CloseDriver();
         }
     }
 }
