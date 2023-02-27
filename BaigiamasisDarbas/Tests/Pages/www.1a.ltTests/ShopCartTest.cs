@@ -18,10 +18,9 @@ namespace Tests
             string expectedResult = "Your product is in shopping cart";
             string actualResult = "Your product is in shopping cart";
             
-            string addCartProduct = "Lenovo computer";
+            string addCartProduct = "Lenovo";
             
             ShopCart.AddToCartButton(addCartProduct);
-            ShopCart.ClickIsProductIsInShoppingCart();
             ShopCart.IsItemInCart();
 
             Assert.AreEqual(expectedResult, actualResult);

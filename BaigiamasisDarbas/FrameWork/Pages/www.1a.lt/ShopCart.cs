@@ -4,17 +4,12 @@
     {
         public static void Open()
         {
-            Driver.OpenUrl("https://www.1a.lt/");
+            Driver.OpenUrl("https://www.1a.lt/p/zaidimu-konsole-microsoft-xbox-series-s-usb-3-1-hdmi-wi-fi/imu1?mtd=search-popup&pos=autocoplete&src=searchnode");
         }
 
         public static void AddToCartButton(string addProduct)
         {
-            Common.ClickElement(Locators.ShopCart.AddProduct, addProduct);
-        }
-
-        public static void ClickIsProductIsInShoppingCart()
-        {
-            Common.ClickElement(Locators.ShopCart.clickShoppingCart);
+            Common.ClickElement(Locators.ShopCart.AddItemToShoppingCart, addProduct);
         }
 
         public static void IsItemInCart()
