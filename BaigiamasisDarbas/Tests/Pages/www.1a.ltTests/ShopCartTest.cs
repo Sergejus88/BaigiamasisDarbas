@@ -20,7 +20,7 @@ namespace Tests
             
             string addCartProduct = "Lenovo";
             
-            ShopCart.AddToCartButton(addCartProduct);
+            ShopCart.EnterToCartButton(addCartProduct);
             ShopCart.IsItemInCart();
 
             Assert.AreEqual(expectedResult, actualResult);
