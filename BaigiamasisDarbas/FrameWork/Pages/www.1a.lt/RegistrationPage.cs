@@ -6,7 +6,7 @@
         {
             Driver.OpenUrl("https://www.1a.lt/users/sign_up");
         }
-
+ 
         public static void EnterFirstName(string inputFirstName)
         {
             Common.SendKeys(Locators.RegistrationPage.inputFirstName, inputFirstName);

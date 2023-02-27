@@ -8,6 +8,7 @@ namespace FrameWork
     public class Driver
     {
         private static IWebDriver driver;
+        private static readonly ChromeOptions options;
 
         public static IWebDriver GetDriver()
         {
@@ -45,6 +46,14 @@ namespace FrameWork
             Directory.CreateDirectory(screenshotsDirectoryPath);
             screenshot.SaveAsFile(screenshotFilePath, ScreenshotImageFormat.Png);
             return screenshotFilePath;
+        }
+
+        public static void ChromeOptions()
+        {
+            ChromeOptions options = new ChromeOptions();
+            options.AddArgument("--disable-cookies");
+            driver = new ChromeDriver(options);
+            driver.Navigate().Refresh();
         }
     }
 }
