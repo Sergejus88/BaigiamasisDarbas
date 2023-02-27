@@ -15,7 +15,7 @@
           internal static string inputEmail = "//*[@id='user_email']";
           internal static string inputPassword = "//*[@id='user_password']";
           internal static string inputReapetPassword = "//*[@id='user_password_confirmation']";
-          internal static string buttonSubmit = "//*[@id='new_user']/div[9]/input";
+          internal static string buttonSubmit = "//*[@id='new_user']";
        }
 
        internal class SignInPage
@@ -27,9 +27,9 @@
 
        internal class ShopCart
        {
-          internal static string EnterProduct = "//*[@id='cart_item_1582294']";
-          internal static string AddProduct = "//*[@id='add_to_cart_form']";
-          internal static string clickShoppingCart = "//*[@id='cart_item_1582294']";
+          internal static string searchAndClickProduct = "//*[@id='top-search-form']";
+          internal static string AddProduct = "//*[@id='add_to_cart_btn']";
+          internal static string clickShoppingCart = "//*[@id='cart-box']";
        }
 
        internal class SearchingResult
