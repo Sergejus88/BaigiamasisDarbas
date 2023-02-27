@@ -14,22 +14,15 @@ namespace Tests
 
         [Test]
 
-        public void AddSomeProductToWishlist()
+        public void AddItemToWishlist()
         {
-            string valueInputEmail = "sergejus.semionkinas@gmail.com";
-            string valueInputPassword = "Password";
+            string expectedResult = ("Added item in wishlist");
+            string actualResult = ("Added item in wishlist");
 
-            SignInPage.InputEmail(valueInputEmail);
-            SignInPage.InputPassword(valueInputPassword);
-            SignInPage.ClickSignIn();
-
-            string expectedResult = ("Added items in wishlist");
-            string actualResult = ("Added items in wishlist");
-
-            string ClickOnItems = "ClickOnItems";
+            string ClickOnItem = "ClickOnItem";
             string ClickLikeButton = "ClickLikeButton";
                 
-            WishList.ClickOnItems(ClickOnItems);
+            WishList.ClickOnItem(ClickOnItem);
             WishList.ClickLikeButton(ClickLikeButton);
 
             Assert.AreEqual(expectedResult, actualResult);

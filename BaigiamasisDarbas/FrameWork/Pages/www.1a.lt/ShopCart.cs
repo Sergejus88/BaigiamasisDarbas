@@ -7,19 +7,19 @@
             Driver.OpenUrl("https://www.1a.lt/");
         }
 
-        public static void InputProductName(string enterProductName)
+        public static void AddToCartButton(string addProduct)
         {
-            Common.SendKeys(Locators.ShopCart.searchAndClickProduct, enterProductName);
-        }
-
-        public static void AddToCartButton(string addCartProduct)
-        {
-            Common.ClickElement(Locators.ShopCart.AddProduct, addCartProduct);
+            Common.ClickElement(Locators.ShopCart.AddProduct, addProduct);
         }
 
         public static void ClickIsProductIsInShoppingCart()
         {
             Common.ClickElement(Locators.ShopCart.clickShoppingCart);
         }
+
+        public static void IsItemInCart()
+        {
+            Common.ClickElement(Locators.ShopCart.isItemInCart);
+        } 
     }
 }

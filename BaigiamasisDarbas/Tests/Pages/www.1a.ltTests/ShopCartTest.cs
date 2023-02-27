@@ -17,13 +17,12 @@ namespace Tests
         {
             string expectedResult = "Your product is in shopping cart";
             string actualResult = "Your product is in shopping cart";
-
-            string searchAndClickProduct = "Lenovo";
-            string addCartProduct = "Lenovo";
-            ShopCart.InputProductName(searchAndClickProduct);
+            
+            string addCartProduct = "Lenovo computer";
+            
             ShopCart.AddToCartButton(addCartProduct);
-
             ShopCart.ClickIsProductIsInShoppingCart();
+            ShopCart.IsItemInCart();
 
             Assert.AreEqual(expectedResult, actualResult);
         }

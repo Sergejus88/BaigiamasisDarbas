@@ -2,6 +2,8 @@
 {
     public class RegistrationPage
     {
+        public static object Cookies { get; private set; }
+
         public static void Open()
         {
             Driver.OpenUrl("https://www.1a.lt/users/sign_up");

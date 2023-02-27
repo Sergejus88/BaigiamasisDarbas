@@ -27,9 +27,9 @@
 
        internal class ShopCart
        {
-          internal static string searchAndClickProduct = "//*[@id='top-search-form']";
           internal static string AddProduct = "//*[@id='add_to_cart_btn']";
-          internal static string clickShoppingCart = "//*[@id='cart-box']";
+          internal static string clickShoppingCart = "//*[@id='add-to-cart']";
+          internal static string isItemInCart = "//*[@id='cart_item_1587494']";
        }
 
        internal class SearchingResult
