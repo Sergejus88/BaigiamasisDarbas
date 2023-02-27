@@ -8,8 +8,7 @@ namespace FrameWork
     public class Driver
     {
         private static IWebDriver driver;
-        private static readonly ChromeOptions options;
-
+        
         public static IWebDriver GetDriver()
         {
             return driver;

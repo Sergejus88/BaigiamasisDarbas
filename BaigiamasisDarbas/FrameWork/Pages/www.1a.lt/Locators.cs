@@ -2,12 +2,13 @@
 {
     internal class Locators
     {
-        internal class WishList
-        {
-            internal static string clickbutton = "<i class=favorite-items__icon icon-svg></i>";
-            internal static string clickOnWishlist = "<p class='wishlists-list__item-name'>Išsaugotos prekės</p>";
+       internal class OrderNumber
+       {
+            internal static string inputOrderNumber = "//*[@id='new_']";
+            internal static string inputEmail = "//*[@id='new_']";
+            internal static string submitButton = "//*[@id='new_']";
         }
-        
+
        internal class RegistrationPage
        {
           internal static string inputFirstName = "//*[@id='user_first_name']";
@@ -27,9 +28,8 @@
 
        internal class ShopCart
        {
-          internal static string AddProduct = "//*[@id='add_to_cart_btn']";
-          internal static string clickShoppingCart = "//*[@id='add-to-cart']";
-          internal static string isItemInCart = "//*[@id='cart_item_1587494']";
+            internal static string AddItemToShoppingCart = "//*[@id='add_to_cart']";
+            internal static string isItemInCart = "//*[@id='cart_item_1587697']";
        }
 
        internal class SearchingResult
