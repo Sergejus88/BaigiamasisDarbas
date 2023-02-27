@@ -13,14 +13,14 @@ namespace Tests
         }
 
         [Test]
-        public void IsProductIsAddedToCart()
+        public void IsItemAddedToCart()
         {
             string expectedResult = "Your product is in shopping cart";
             string actualResult = "Your product is in shopping cart";
 
-            string enterProductName = "Lenovo";
+            string searchAndClickProduct = "Lenovo";
             string addCartProduct = "Lenovo";
-            ShopCart.InputProductName(enterProductName);
+            ShopCart.InputProductName(searchAndClickProduct);
             ShopCart.AddToCartButton(addCartProduct);
 
             ShopCart.ClickIsProductIsInShoppingCart();

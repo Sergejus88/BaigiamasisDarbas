@@ -9,7 +9,7 @@
 
         public static void InputProductName(string enterProductName)
         {
-            Common.SendKeys(Locators.ShopCart.EnterProduct, enterProductName);
+            Common.SendKeys(Locators.ShopCart.searchAndClickProduct, enterProductName);
         }
 
         public static void AddToCartButton(string addCartProduct)
