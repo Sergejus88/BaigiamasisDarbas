@@ -16,7 +16,6 @@ namespace Tests
         [Test]
         public void FillSignUp()
         {
-            string Cookies = null;
             string expectedResult = ("Registration is completed");
             string actualResult = ("Registration is completed");
 

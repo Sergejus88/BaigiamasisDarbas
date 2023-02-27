@@ -4,8 +4,6 @@ namespace FrameWork.Pages
 {
     internal class Common
     {
-        internal static object Cookies;
-
         private static IWebElement GetElement(string locator)
         {
             return Driver.GetDriver().FindElement(By.XPath(locator));
