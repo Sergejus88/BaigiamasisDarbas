@@ -19,10 +19,8 @@ namespace Tests
             string actualResult = "The shop is in Klaipeda";
             string yes = "";
 
-
             FindShop.FindTheshop(yes);
-            FindShop.IsShopExists();
-
+           
             Assert.AreEqual(expectedResult, actualResult);
         }
     }

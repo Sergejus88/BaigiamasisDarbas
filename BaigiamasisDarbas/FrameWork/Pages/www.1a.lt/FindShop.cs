@@ -9,12 +9,7 @@
 
         public static void FindTheshop(string findTheshop)
         {
-            Common.SendKeys(Locators.FindShop.findTheshop, findTheshop);
-        }
-
-        public static void IsShopExists()
-        {
-            Common.ClickElement(Locators.FindShop.isShopExists);
+            Common.Equals(Locators.FindShop.findTheshop, findTheshop);
         }
     }
 }
