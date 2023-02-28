@@ -27,7 +27,7 @@
 
         internal class FindShop
         {
-            internal static string findTheshop = "//*[@id='city_3']";
+            internal static string findTheshop = "//*[@id='Klaipėda']";
         }
 
         internal class SearchingResult

@@ -9,7 +9,7 @@
 
         public static void FindTheshop(string findTheshop)
         {
-            Common.Equals(Locators.FindShop.findTheshop, findTheshop);
+            Common.ClickElement(findTheshop);
         }
     }
 }

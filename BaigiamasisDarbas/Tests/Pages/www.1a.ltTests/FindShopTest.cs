@@ -17,7 +17,7 @@ namespace Tests
         {
             string expectedResult = "The shop is in Klaipeda";
             string actualResult = "The shop is in Klaipeda";
-            string yes = "";
+            string yes = "Klaipeda";
 
             FindShop.FindTheshop(yes);
            
