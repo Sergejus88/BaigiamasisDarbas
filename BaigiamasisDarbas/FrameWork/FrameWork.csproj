@@ -151,7 +151,7 @@
   <ItemGroup>
     <Compile Include="Driver.cs" />
     <Compile Include="Pages\www.1a.lt\RegistrationPage.cs" />
-    <Compile Include="Pages\www.1a.lt\OrderNumber.cs" />
+    <Compile Include="Pages\www.1a.lt\SmartApp.cs" />
     <Compile Include="Pages\www.1a.lt\Locators.cs" />
     <Compile Include="Pages\www.1a.lt\SearchingResult.cs" />
     <Compile Include="Pages\www.1a.lt\ShopCart.cs" />

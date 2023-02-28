@@ -2,11 +2,11 @@
 {
     internal class Locators
     {
-       internal class OrderNumber
-       {
-            internal static string inputOrderNumber = "//*[@id='new_']";
-            internal static string inputEmail = "//*[@id='new_']";
-            internal static string submitButton = "//*[@id='new_']";
+       internal class SmartUp
+        {
+            internal static string inputNumber = "//*[@id='mobile_application_phone_number']";
+            internal static string inputEmail = "//*[@id='mobile_application_email']";
+            internal static string submitButton = "//*[@id='new_mobile_application']";
         }
 
        internal class RegistrationPage

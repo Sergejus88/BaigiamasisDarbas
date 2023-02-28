@@ -62,7 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Pages\BaseTest\BaseTest.cs" />
-    <Compile Include="Pages\www.1a.ltTests\OrderNumberTest.cs" />
+    <Compile Include="Pages\www.1a.ltTests\SmartAppTest.cs" />
     <Compile Include="Pages\www.1a.ltTests\RegistrationPageTest.cs" />
     <Compile Include="Pages\www.1a.ltTests\ShopCartTest.cs" />
     <Compile Include="Pages\www.1a.ltTests\SignInPageTest.cs" />
