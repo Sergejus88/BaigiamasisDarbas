@@ -26,10 +26,10 @@
           internal static string clickSignIn = "//*[@id='new_user']";
        }
 
-       internal class ShopCart
+       internal class FindShop
        {
-            internal static string AddItemToShoppingCart = "//*[@id='add_to_cart']";
-            internal static string isItemInCart = "//*[@id='cart_item_1587697']";
+            internal static string findTheshop= "//*[@id='Klaipėda']";
+            internal static string isShopExists = "//*[@id='Klaipėda']";
        }
 
        internal class SearchingResult

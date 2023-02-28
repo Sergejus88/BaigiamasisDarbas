@@ -64,7 +64,7 @@
     <Compile Include="Pages\BaseTest\BaseTest.cs" />
     <Compile Include="Pages\www.1a.ltTests\SmartAppTest.cs" />
     <Compile Include="Pages\www.1a.ltTests\RegistrationPageTest.cs" />
-    <Compile Include="Pages\www.1a.ltTests\ShopCartTest.cs" />
+    <Compile Include="Pages\www.1a.ltTests\FindShopTest.cs" />
     <Compile Include="Pages\www.1a.ltTests\SignInPageTest.cs" />
     <Compile Include="Pages\www.1a.ltTests\SearchingResultTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
