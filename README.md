@@ -32,15 +32,14 @@ Nuoroda į testuojamą interneto svetainę - https://www.1a.lt/.
             – Atlikus aukčiau nurodytus veiksmus gauname atsiranda ieškomo produkto modeliai su aprašymais, nuotraukomis ir kainomis.                            
  
 
- 4. scenarijus – Susirasti patikusią prekę ir įtraukti ją į patikusių produktų sąrašą, - "Wishlist" ir patikrinti ar pažymėtas produktas atsirado "Wishlist".
-     1. atvejis – Patikusių produktų įtraukimas į Wishlist":
-          1. žingsnis - prisijungiame prie asmeninės paskyros.
-          2. žingsnis – dešinėje puslapio pusėje surandame priekių sąrašus ir spaudžiame ant kompiuterinės technikos/nešiojamų kompiuterių.
-          3. žingsnis – išsirenkame kelias prekes ir spaudžiame ant jų "širdutę"
-          4. žingsnis – Kairėje puslapio pusėje randasi ikona su širdies atvaizdu, spaudžiame ant jos.
-     
+ 4. scenarijus – Atsisiusti mobiliąją programėlę į telefoną tiesiogiai iš wwww.1a.lt svetainės. 
+     1. atvejis – Mobiliosios programėlės atsisiuntimas į mobilųjį telefoną.
+          1. žingsnis - Pagrindiniame svetainės puslapyje viršutinėje dalyje susirandame laukelį su pavadinimu "Programėlė" ir paspaudžiame ant jos.
+          2. žingsnis – Atsidariusiame lange suvedame duomenis( mobilaus telefono numerį ir elektroninio pašto adresą.
+          3. žingsnis – Paspaudžiame "Siusti nuoruodą".
+         
       – Galutinis Rezultatas:
-            – Paspaudus įkoną, atsidaro naujas puslapis , kuriame yra pavaizduotos mūsų išrinktos prekės.
+            – Paspaudus gauname atsakymą, kad nuoruoda yra sėkmingai išsiusta. Ko pasekoje į savo el. pašto adresą ir mobilųjį telefoną gavau žinutes su nuoruodomis atsisiusti mobiliąją svetainės wwww.1a.lt programėlę.
            
               
  5. scenarijus – Įsidėti į prekių krepšelį norimą pirkti produktą ir patikrinti tas produktas atsirado pirkinių krepšelyje.
