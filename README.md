@@ -42,16 +42,11 @@ Nuoroda į testuojamą interneto svetainę - https://www.1a.lt/.
             – Paspaudus gauname atsakymą, kad nuoruoda yra sėkmingai išsiusta. Ko pasekoje į savo el. pašto adresą ir mobilųjį telefoną gavau žinutes su nuoruodomis atsisiusti mobiliąją svetainės wwww.1a.lt programėlę.
            
               
- 5. scenarijus – Įsidėti į prekių krepšelį norimą pirkti produktą ir patikrinti tas produktas atsirado pirkinių krepšelyje.
-     1. atvejis – Norimo pirkti produkto prisidėjimas ketinant jį pirkti.
-          1. žingsnis - pagrindiniame svetainės puslapyje kairėje pusėje spaudžiame skiltį “Kompiuterinė technika, biuro prekės” .
-          2. žingsnis – naujai atsidariusiame lange spaudžiame pačią pirmą nuotrauką su atvaizduotu nešiojamuoju kompiuteriu ir pavadinimu „Nešiojamieji kompiuteriai                           ir jų priedai“.
-          3. žingsnis - atsidariusiame lange pakartojame identišką veiksmą su nešiojamo kompiuterio atvaizdu jį paspausdami.
-          4. žingsnis – sekančiame atsidariusiame lange „paskroliname" šiek tiek žemyn ir vedame pelės rodyklę ant pačio pirmo produkto(nešiojamo kompiuterio "Lenovo")                         ir spaudžiame skiltį – Į Krepšelį.
-          5. žingsnis - naujausiame atsidariusiame lange mums reikia pasirinkti arba iškart spausti ant skilties „Peržiūrėti pirkinių krepšelį“, arba „Testi prekių                             paiešką“.
-          6. žingsnis – uždarome šį langą ir turėtume pamatyti viršutinėje svetainės dešinėje dalyje atvaizduotą mini krepšelį su priklijuotu skaičiumi „1“.
-          7. žingsnis – Atidarome jį, kad įsitikinti jog mūsų norimas pirkti produktas yra pridėtas pirkinių krepšelyje.
-          
+ 5. scenarijus – Susirasti "1a"" parduotuvę Klaipėdoje.
+     1. atvejis – Parduotuvės radimas www.1a.svetainėje.
+          1. žingsnis - pagrindiniame svetainės puslapyje viršutinėje pusėje spaudžiame skiltį “Aptarnavimo centrai" .
+          2. žingsnis – naujai atsidariusiame lange laukelyje "Miestai" išsirenkame Klaipėdą ir spaudžiame "Rasti".
+          3. žingsnis – Tame pačiame puslapyje pats puslapis "nubėga" žemyn ir pamatome parduotuves esančias Klaipėdoje.
           
       – Galutinis Rezultatas:
-            – Paspaudus ant mini krepšelio, naujai atsidariusiame lange matome, jog mūsų produktas yra pridėtas į pirkinių krepšelį ir galima toliau tęsti produkto                             pirkimo veiksmus.
+            – Randame "1a" parduotuves esančias Klaipėdoje.
