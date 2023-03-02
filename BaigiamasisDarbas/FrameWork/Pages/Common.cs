@@ -1,5 +1,4 @@
 ﻿using OpenQA.Selenium;
-using OpenQA.Selenium.Interactions;
 using OpenQA.Selenium.Support.Extensions;
 using OpenQA.Selenium.Support.UI;
 using SeleniumExtras.WaitHelpers;
@@ -41,6 +40,11 @@ namespace FrameWork.Pages
 
             Driver.GetDriver().ExecuteJavaScript("arguments[0].scrollIntoView();", element);
             System.Threading.Thread.Sleep(1000);
+        }
+
+        internal static string GetElementText(string locator)
+        {
+            return GetElement(locator).Text;
         }
     }
 }
