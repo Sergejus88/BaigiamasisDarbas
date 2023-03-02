@@ -27,5 +27,10 @@ namespace FrameWork.Pages.www._1a.lt
             WebDriverWait wait = new WebDriverWait(Driver.GetDriver(), TimeSpan.FromSeconds(5));
             wait.Until(ExpectedConditions.ElementIsVisible(By.XPath(Locators.SearchingResult.clickButton)));
         }
+
+        public static string GetRedirectedTitle()
+        {
+            return Common.GetElementText("//*[@id='landing-apple']/div[1]/div/span");
+        }
     }
 }

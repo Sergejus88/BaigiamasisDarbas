@@ -20,11 +20,9 @@ namespace Tests
             SearchingResult.SearchField(valueInputText);
             SearchingResult.ClickSearchButton();
 
-            string expectedResult = "Apple products";
-            string actualResult = "Apple products";
+            string expectedResult = "Sveiki atvykę į 1a.lt Apple parduotuvę";
 
-            string WaitForElementToBeVisible = "results";
-            Assert.AreEqual(expectedResult, actualResult, WaitForElementToBeVisible);
+            Assert.AreEqual(expectedResult, SearchingResult.GetRedirectedTitle());
         }
     }
 }

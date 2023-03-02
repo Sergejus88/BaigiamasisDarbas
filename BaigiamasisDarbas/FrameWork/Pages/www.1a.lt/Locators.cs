@@ -33,7 +33,7 @@
         internal class SearchingResult
         {
             internal static string inputText = "//*[@id='q']";
-            internal static string clickButton = "//*[@id='top-search-form']";
+            internal static string clickButton = "//*[@id='top-search-form']//button";
         }
     }
 }
