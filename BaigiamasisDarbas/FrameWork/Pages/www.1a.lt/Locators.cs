@@ -22,7 +22,7 @@
         {
             internal static string inputEmail = "//*[@id='user_email']";
             internal static string inputPassword = "//*[@id='user_password']";
-            internal static string clickSignIn = "//*[@id='new_user']";
+            internal static string clickSignIn = "//*[@id='new_user']//input[@type='submit']";
         }
 
         internal class FindShop

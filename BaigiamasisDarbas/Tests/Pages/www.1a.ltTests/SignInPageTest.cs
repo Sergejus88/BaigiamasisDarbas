@@ -15,17 +15,16 @@ namespace Tests
         [Test]
         public void SignIn()
         {
-            string valueInputEmail = "sergejus.semionkinas@gmail.com";
+            string valueInputEmail = "email51d43eff-e8ff-417a-8d67-217afbb11ded@gmail.com";
             string valueInputPassword = "Password";
 
-            string expectedResult = "Your login is successfully";
-            string actualResult = "Your login is successfully";
+            string expectedResult = "https://www.1a.lt/";
 
             SignInPage.InputEmail(valueInputEmail);
             SignInPage.InputPassword(valueInputPassword);
             SignInPage.ClickSignIn();
 
-            Assert.AreEqual(expectedResult, actualResult);
+            Assert.AreEqual(expectedResult, SignInPage.GetRedirectedUrl());
         }
     }
 }
