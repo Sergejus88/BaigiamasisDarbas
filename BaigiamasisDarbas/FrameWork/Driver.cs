@@ -24,11 +24,6 @@ namespace FrameWork
             driver.Url = url;
         }
 
-        public static void Open()
-        {
-            Driver.Open();
-        }
-
         public static void CloseDriver()
         {
             driver.Quit();
