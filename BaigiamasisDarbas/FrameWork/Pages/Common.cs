@@ -1,4 +1,6 @@
 ﻿using OpenQA.Selenium;
+using OpenQA.Selenium.Interactions;
+using OpenQA.Selenium.Support.Extensions;
 using OpenQA.Selenium.Support.UI;
 using SeleniumExtras.WaitHelpers;
 using System;
@@ -31,6 +33,14 @@ namespace FrameWork.Pages
         {
             WebDriverWait wait = new WebDriverWait(Driver.GetDriver(), TimeSpan.FromSeconds(10));
             wait.Until(ExpectedConditions.ElementIsVisible(By.XPath(locator)));
+        }
+
+        internal static void ScrollToElement(string locator)
+        {
+            IWebElement element = GetElement(locator);
+
+            Driver.GetDriver().ExecuteJavaScript("arguments[0].scrollIntoView();", element);
+            System.Threading.Thread.Sleep(1000);
         }
     }
 }

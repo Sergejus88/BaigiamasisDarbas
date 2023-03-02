@@ -5,6 +5,8 @@
         public static void Open()
         {
             Driver.OpenUrl("https://www.1a.lt/users/sign_up");
+            Common.WaitForElementToBeVisible("//*[@id='cookiebanner' and @style='display: block; bottom: 0px;']");
+            Common.ClickElement("//*[@id='CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll']");
         }
  
         public static void EnterFirstName(string inputFirstName)
@@ -34,7 +36,13 @@
 
         public static void ClickSubmitButton()
         {
+            Common.ScrollToElement(Locators.RegistrationPage.inputReapetPassword);
             Common.ClickElement(Locators.RegistrationPage.buttonSubmit);
+        }
+
+        public static string GetRedirectedUrl()
+        {
+            return Driver.GetDriver().Url;
         }
     }        
 }
