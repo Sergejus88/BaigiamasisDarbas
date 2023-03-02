@@ -24,7 +24,14 @@ namespace FrameWork
 
         public static void SubmitButton()
         {
+            Common.ScrollToElement(Locators.SmartUp.inputNumber);
             Common.ClickElement(Locators.SmartUp.submitButton);
+        }
+
+        public static string GetSuccessMessage()
+        {
+            Common.WaitForElementToBeVisible("//*[@id='new_mobile_application']//h5");
+            return Common.GetElementText("//*[@id='new_mobile_application']//h5");
         }
     }
 }

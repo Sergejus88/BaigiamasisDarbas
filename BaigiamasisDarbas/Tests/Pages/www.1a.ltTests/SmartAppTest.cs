@@ -1,5 +1,6 @@
 ﻿using FrameWork;
 using NUnit.Framework;
+using System;
 using Tests.Pages.BaseTests;
 
 namespace Tests 
@@ -16,17 +17,17 @@ namespace Tests
 
         public void IsDownloadAvailable()
         {
-            string inputNumbers = "+37067147870";
-            string inputEmail = "sergejus.semionkinas@gmail.com";
+            Random random = new Random();
+            string inputNumbers = $"+370671{random.Next(10000, 99999)}";
+            string inputEmail = $"email{Guid.NewGuid()}@gmail.com";
 
-            string expectedResult = ("Link is sent to my phone");
-            string actualResult = ("Link is sent to my phone");
+            string expectedResult = "Sėkmingai išsiųsta. Patikrink savo mobilųjį telefoną";
 
             SmartUp.InputOrder(inputNumbers);
             SmartUp.InputEmailAddress(inputEmail);
             SmartUp.SubmitButton();
             
-            Assert.AreEqual(expectedResult, actualResult);
+            Assert.AreEqual(expectedResult, SmartUp.GetSuccessMessage());
         }
     }
 }
