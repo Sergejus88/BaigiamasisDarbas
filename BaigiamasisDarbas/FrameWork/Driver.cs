@@ -40,13 +40,5 @@ namespace FrameWork
             screenshot.SaveAsFile(screenshotFilePath, ScreenshotImageFormat.Png);
             return screenshotFilePath;
         }
-
-        public static void ChromeOptions()
-        {
-            ChromeOptions options = new ChromeOptions();
-            options.AddArgument("--disable-cookies");
-            driver = new ChromeDriver(options);
-            driver.Navigate().Refresh();
-        }
     }
 }
