@@ -20,6 +20,7 @@ namespace Tests.Pages.BaseTests
                 string fileName = Driver.TakeScreenshot();
                 TestContext.AddTestAttachment(fileName);
             }
+
             Driver.CloseDriver();
         }
     }          

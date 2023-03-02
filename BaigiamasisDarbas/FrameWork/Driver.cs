@@ -22,7 +22,6 @@ namespace FrameWork
         public static void OpenUrl(string url)
         {
             driver.Url = url;
-            driver.Navigate().GoToUrl(url);
         }
 
         public static void Open()
