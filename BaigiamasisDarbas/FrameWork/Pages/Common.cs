@@ -19,16 +19,10 @@ namespace FrameWork.Pages
             GetElement(locator).SendKeys(message);
         }
 
-        internal static string Open(string locator)
-        {
-            return GetElement(locator).Text;
-        }
-
         internal static void SendKeys(string locator, string message)
         {
             GetElement(locator).SendKeys(message);
         }
     }
 }
-    
-
+   
