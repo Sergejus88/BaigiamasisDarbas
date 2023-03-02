@@ -7,10 +7,7 @@ namespace FrameWork
         public static void Open()
         {
             Driver.OpenUrl("https://www.1a.lt/mobile_applications");
-            // Close cookies
-            //Common.WaitForElementToBeClickable("//*[@id='CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll']");
             Common.WaitForElementToBeVisible("//*[@id='cookiebanner' and @style='display: block; bottom: 0px;']");
-            //System.Threading.Thread.Sleep(3000);
             Common.ClickElement("//*[@id='CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll']");
         }
 
