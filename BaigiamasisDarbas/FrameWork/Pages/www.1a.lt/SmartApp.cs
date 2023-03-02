@@ -7,6 +7,8 @@ namespace FrameWork
         public static void Open()
         {
             Driver.OpenUrl("https://www.1a.lt/mobile_applications");
+            Common.WaitForElementToBeVisible("//*[@id='cookiebanner' and @style='display: block; bottom: 0px;']");
+            Common.ClickElement("//*[@id='CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll']");
         }
 
         public static void InputOrder(string inputNumber)
@@ -22,7 +24,14 @@ namespace FrameWork
 
         public static void SubmitButton()
         {
+            Common.ScrollToElement(Locators.SmartUp.inputNumber);
             Common.ClickElement(Locators.SmartUp.submitButton);
+        }
+
+        public static string GetSuccessMessage()
+        {
+            Common.WaitForElementToBeVisible("//*[@id='new_mobile_application']//h5");
+            return Common.GetElementText("//*[@id='new_mobile_application']//h5");
         }
     }
 }

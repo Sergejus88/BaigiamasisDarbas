@@ -22,12 +22,6 @@ namespace FrameWork
         public static void OpenUrl(string url)
         {
             driver.Url = url;
-            driver.Navigate().GoToUrl(url);
-        }
-
-        public static void Open()
-        {
-            Driver.Open();
         }
 
         public static void CloseDriver()
@@ -45,14 +39,6 @@ namespace FrameWork
             Directory.CreateDirectory(screenshotsDirectoryPath);
             screenshot.SaveAsFile(screenshotFilePath, ScreenshotImageFormat.Png);
             return screenshotFilePath;
-        }
-
-        public static void ChromeOptions()
-        {
-            ChromeOptions options = new ChromeOptions();
-            options.AddArgument("--disable-cookies");
-            driver = new ChromeDriver(options);
-            driver.Navigate().Refresh();
         }
     }
 }

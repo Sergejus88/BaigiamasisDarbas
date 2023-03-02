@@ -7,9 +7,9 @@
             Driver.OpenUrl("https://www.1a.lt/stores");
         }
 
-        public static void FindTheshop(string findTheshop)
+        public static string FindTheshop()
         {
-            Common.ClickElement(findTheshop);
+            return Common.GetElementText("//*[@id='Klaipėda']");
         }
     }
 }

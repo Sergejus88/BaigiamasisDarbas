@@ -1,5 +1,6 @@
 ﻿using FrameWork.Pages.www._1a.lt;
 using NUnit.Framework;
+using System;
 using Tests.Pages.BaseTests;
 
 namespace Tests
@@ -16,12 +17,11 @@ namespace Tests
         [Test]
         public void FillSignUp()
         {
-            string expectedResult = ("Registration is completed");
-            string actualResult = ("Registration is completed");
+            string expectedResult = ("https://www.1a.lt/");
 
             string inputFirstName = "Sergejus";
             string inputLastname = "Semionkinas";
-            string inputEmail = "sergejus.semionkinas@gmail.com";
+            string inputEmail = $"email{Guid.NewGuid()}@gmail.com";
             string inputPassword = "Password";
             string inputReapetPassword = "Password";
 
@@ -32,7 +32,7 @@ namespace Tests
             RegistrationPage.EnterReapetPassword(inputReapetPassword);
             RegistrationPage.ClickSubmitButton();
 
-            Assert.AreEqual(expectedResult, actualResult);
+            Assert.AreEqual(expectedResult, RegistrationPage.GetRedirectedUrl());
         }
     }
 }

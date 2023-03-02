@@ -15,13 +15,9 @@ namespace Tests
         [Test]
         public void FindShopInKlaipeda()
         {
-            string expectedResult = "The shop is in Klaipeda";
-            string actualResult = "The shop is in Klaipeda";
-            string yes = "Klaipeda";
-
-            FindShop.FindTheshop(yes);
+            string expectedResult = "Klaipėda";
            
-            Assert.AreEqual(expectedResult, actualResult);
+            Assert.AreEqual(expectedResult, FindShop.FindTheshop());
         }
     }
 }
